@@ -1,0 +1,30 @@
+{
+    "name": "genforge/hello-world",
+    "description": "A simple Laravel hello world package by Genforge",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "genforge",
+            "email": "genforge@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Genforge\\HelloWorld\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Genforge\\HelloWorld\\HelloWorldServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
